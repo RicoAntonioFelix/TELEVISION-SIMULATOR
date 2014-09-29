@@ -2,7 +2,7 @@
  ** Copyright 2014 Rico Antonio Felix
  **
  ** Licensed under the Apache License, Version 2.0 (the "License");
- ** you may not use this file except in compliance with the License.
+ ** You may not use this file except in compliance with the License.
  ** You may obtain a copy of the License at
  **
  ** http://www.apache.org/licenses/LICENSE-2.0
@@ -146,9 +146,23 @@ public:
 	}
 
 private:
-	unsigned char state_mode : 2; // on and off state field
-	unsigned char padding : 6; // alignment requirements
-	unsigned char channel; // channel state field
+
+	/**
+	 ** This field uses a bit field of 2 to hold the following information:
+	 ** Bit 1: 0 = off, 1 = on
+	 ** Bit 2: 0 = cable, 1 = antenna
+	 **/
+	unsigned char state_mode : 2;
+
+	/**
+	 ** This field is reserved for future requirements
+	 **/
+	unsigned char padding : 6;
+
+	/**
+	 ** This field is used to store channel information
+	 **/
+	unsigned char channel;
 };
 
 
