@@ -2,7 +2,7 @@
  ** Copyright 2014 Rico Antonio Felix
  **
  ** Licensed under the Apache License, Version 2.0 (the "License");
- ** you may not use this file except in compliance with the License.
+ ** You may not use this file except in compliance with the License.
  ** You may obtain a copy of the License at
  **
  ** http://www.apache.org/licenses/LICENSE-2.0
@@ -22,6 +22,7 @@ int main(int argc, char **argv)
 
 	CSP::TV bedroom;
 
+	CSP::Remote::toggle_mode(bedroom);
 	CSP::Remote::change_channel(bedroom, 40);
 	CSP::Remote::display_settings(bedroom);
 
