@@ -1,4 +1,4 @@
-Television_Simulator
+TELEVISION-SIMULATOR
 ====================
 
 Television Simulation Application
