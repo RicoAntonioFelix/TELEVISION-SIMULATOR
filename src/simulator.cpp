@@ -25,13 +25,13 @@
 
 int main(int argc, char **argv)
 {
-	namespace CSP = compuSUAVE_Professional;
+    namespace CSP = compuSUAVE_Professional;
 
-	CSP::TV bedroom;
+    CSP::TV bedroom;
 
-	CSP::Remote::toggle_mode(bedroom);
-	CSP::Remote::change_channel(bedroom, 40);
-	CSP::Remote::display_settings(bedroom);
+    CSP::Remote::toggle_mode(bedroom);
+    CSP::Remote::change_channel(bedroom, 40);
+    CSP::Remote::display_settings(bedroom);
 
-	return 0;
+    return 0;
 }
