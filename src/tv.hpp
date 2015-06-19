@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+/*
+ * @author Rico Antonio Felix <ricoantoniofelix@yahoo.com>
+ */
+
 #ifndef TV_HOME_EDITION
 #define TV_HOME_EDITION
 
